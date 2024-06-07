@@ -89,3 +89,62 @@ myfamily = {
 }
 
 # Each key in the parent dictionary has a dictionary with key/value pairs as value
+
+#Lists
+
+#1 Create list
+my_list = ["black", "grey", "white", "navi", "dark blue"]
+#output 2nd element
+print(my_list[1])
+
+#2 Change the value opf the first iitem to a new value
+my_list[0] = "maroon"
+
+#3 add a sixth item to the list
+
+list.append("dark green")
+
+#4 Add "Bathel" as the item 
+my_list.insert(2,"Bathel")
+
+#5 Remove the 4th item from the list 
+
+del my_list[3]
+
+#6 Use the negative index to print last item in list
+print(my_list[-1])
+
+#7 Create new list with 7 items and use range to print items
+
+list2 = ["a","b","c","d","e","f","g"]
+print(list2[2:5])
+
+#8 Create a list of countries
+
+countries = ["Chad", "Uganda", "Rwanda", "Kenya", "Cameroon"]
+copy_list = countries.copy()
+
+#9 Loop through list of countries
+
+for country in countries:
+    print("The country is :", country)
+
+#10  List of animal names and sort in assending and descending order
+
+animals = list(('Cat', "snake", 'Rakoon', "Anaconda",'python'))
+animals.sort() # Assinding order
+animals.sort(reverse=True) # Descending order
+
+# Output animals with 'a' in only
+
+for x in animals:
+    if 'a' in x:
+        print(x)
+
+#12  A list containing first names and second names then join them
+
+first_names = ["Ndjekornom", "Cyiza Ndoli" ,"Mulindwa", "Assimire","Efrata"]
+last_names = ["Victoire", "Jean de Dieu" ,"Yusuf", "Patricia","Aaron"]
+
+full_names = first_names.extend(last_names)
+
