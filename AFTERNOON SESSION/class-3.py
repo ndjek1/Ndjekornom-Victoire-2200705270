@@ -17,15 +17,16 @@ class Employee:
     go = adde
     
     Department = "Finance" #common attribute to all objects
-    
+    marks = 80
     #pass ...if class attributes are not declared
     
     def __init__ (this, name, age):
         this.name = name
         this.age = age
         
+        
     def displaydetail(agg):
-        print(agg.name + " " + str(agg.age))
+        print(agg.name + " " + str(agg.age) + " " + str(agg.Department))
 
 #Stacey
     @classmethod
@@ -69,12 +70,13 @@ class Employee:
     #Patricia
  #Creating objects   
 Emp1 = Employee( "Celine", 54)
+Emp1.displaydetail()
 Emp2 = Employee("Benson" , 25)
 Emp3 = Employee("Terry" , 28)
 Emp4 = Employee("Roman", 38)
 
 #accessing objects and attributes   
-print("first Employee name:" + " " + Emp1.name + " " + "and age is" + " " + str(Emp1.age))
+print("first Employee name:" + " " + Emp1.name + " " + "and age is" + " " + str(Emp1.age) )
 
 print()
 #or
@@ -99,6 +101,7 @@ print(Emp4.status, Emp4.name)
 
 Employee.myfunc2()
 Employee.myfunc3()
+Emp4.myfunc2()
 Emp4.myfunc3()
 
 #you can also change the value of the property of the object
