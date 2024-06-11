@@ -147,4 +147,3 @@ first_names = ["Ndjekornom", "Cyiza Ndoli" ,"Mulindwa", "Assimire","Efrata"]
 last_names = ["Victoire", "Jean de Dieu" ,"Yusuf", "Patricia","Aaron"]
 
 full_names = first_names.extend(last_names)
-
