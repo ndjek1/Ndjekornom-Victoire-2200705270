@@ -25,4 +25,3 @@ person = Person("Jane", 24, False)
 name, age = person.name, person.age  #Which will return the name of that particular person
 
 print(name,age)
-3
