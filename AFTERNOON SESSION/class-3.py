@@ -31,11 +31,18 @@ class Employee:
 #Stacey
     @classmethod
     def myfunc2(cls):
-        print("this is my class method")    
+        print("this is my class method :", cls.Department)    
 
     @staticmethod
     def myfunc3():
-        print("this is my static method")       
+        print("this is my static method")   
+
+    def setName(self,name):
+        self.name = name
+
+    def getName(self):
+        return self.name
+            
 #@classmethod and @staticmethod are decorators that modify the behavior of methods within a class.
 #When a method is decorated with @classmethod, it becomes a class method.
 #A class method receives the class itself as its first parameter, conventionally named cls.
@@ -105,8 +112,11 @@ Emp4.myfunc2()
 Emp4.myfunc3()
 
 #you can also change the value of the property of the object
-Emp4.name="Mark"
-print(Emp4.name)
+
+Emp4.setName("Mark")
+name = Emp4.getName()
+print("The name is: ", name)
+
 
 
            
