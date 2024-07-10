@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename = 'styles.css')}}">
+    <title>Species list</title>
+</head>
+<body>
+    <h1>Endangered Species</h1>
+    
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Habitat</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for species in species_list %}
+            <tr>
+                <td>{{ species.name }}</td>
+                <td>{{ species.habitat }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+<a href="{{url_for('add_species')}}">Add specy</a>
+
+   
+    
+    
+</body>
+</html>
