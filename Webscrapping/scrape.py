@@ -44,7 +44,7 @@ import json
 # with open(json_file, mode = 'w', encoding='utf-8') as file:
 #     json.dump(data, file, ensure_ascii= False, indent=4)
 
-api_key = '02bd50a043cd18936f9bc89d55c664bc'
+api_key = ''
 lat = '0.3163'
 lon = '32.5822'
 city = 'kampala'
