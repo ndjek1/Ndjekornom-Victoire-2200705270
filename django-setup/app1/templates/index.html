@@ -1,0 +1,56 @@
+{% extends 'base.html'%}
+{% load static %}
+{% block title %}
+logic loop
+{% endblock %}
+
+{% block content %}
+
+    <p>Welcome dear!</p>
+    <div class="row row-cols-1 row-cols-md-3 g-4 p-4 ">
+        <div class="col mb-3">
+          <div class="card h-100">
+            <img src="{% static '/images/shape.png' %}" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. 
+                This content is a little bit longer.</p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+        </div>
+        <div class="col mb-3">
+          <div class="card h-100">
+            <img src="{% static '/images/cloud-like-shape.png' %}" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">This is a short card.</p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+        </div>
+        <div class="col mb-3">
+          <div class="card h-100">
+            <img src="{% static '/images/shape2.png' %}" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+        </div>
+        <div class="col mb-3">
+          <div class="card h-100">
+            <img src="{% static '/images/Sleeping Fox.png' %}" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">This is a longer card with supporting text below as a natural 
+                lead-in to additional content. This content is a little bit longer.</p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+
+{% endblock %}
